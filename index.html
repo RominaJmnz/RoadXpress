@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ROADXPRESS | NEUMATICOS</title>
+
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="css/lightbox.css"> <!--Llama al core de jQuery, esta forma es desde un CDN-->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!--Llama al core de jQuery, desde lightbox-->
+
+<script src="js/lightbox.js"></script>
+
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="css/demo.css"> <!-- demo.css contains additional styles used to set up this demo page - not required for the slider -->
+
+
+</head>
+
+
+<body>
+ <!-- Main Container -->
+<div class="container2">
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">NUESTRA EMPRESA</a></li>
+        <li><a href="#contact">LLAMANOS AL +56912365478</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1 class="hero_header">ROAD <span class="light">XPRESS</span></h1>
+    <p class="tagline">Todo para tu <strong>camino</strong></p>
+  </section>
+</div>
+	<!-- Forum Section -->
+
+	<div class="bg-img">
+	  <form action="/action_page.php" class="containerZ">
+	    <h1>COTIZACIÓN</h1>
+
+	    <label for="model"><b>Modelo</b></label>
+	    <input type="text" placeholder="EJ: Ford Fiesta" name="model" required>
+
+	    <label for="names"><b>Nombre y Apellido</b></label>
+	    <input type="text" placeholder="Ingresar Nombre y Apellido" name="names" required>
+
+			<label for="names"><b>RUT</b></label>
+	    <input type="text" placeholder="RUT" name="names" required>
+
+			<label for="names"><b>Teléfono</b></label>
+	    <input type="text" placeholder="Telefono" name="names" required>
+
+			<label for="names"><b>Correo</b></label>
+	    <input type="text" placeholder="Correo" name="names" required>
+
+			<label for="names"><b>Opcion de contacto</b></label>
+			<select id="via" name="via">
+      <option value="telefono">Teléfono</option>
+      <option value="correo">Correo</option>
+      <option value="wsp">Whatsapp</option>
+    </select>
+
+	    <button type="submit" class="btn">Enviar</button>
+	  </form>
+	</div>
+
+<!-- End Forum Section -->
+
+
+
+<!-- #region Jssor Slider Begin -->
+
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+
+				var jssor_1_SlideshowTransitions = [
+					{$Duration:500,$Delay:12,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2049,$Easing:$Jease$.$OutQuad},
+					{$Duration:500,$Delay:40,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$SlideOut:true,$Easing:$Jease$.$OutQuad},
+					{$Duration:1000,x:-0.2,$Delay:20,$Cols:16,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:260,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Outside:true,$Round:{$Top:0.5}},
+					{$Duration:1600,y:-1,$Delay:40,$Cols:24,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:$Jease$.$OutJump,$Round:{$Top:1.5}},
+					{$Duration:1200,x:0.2,y:-0.1,$Delay:16,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InWave,$Top:$Jease$.$InWave,$Clip:$Jease$.$OutQuad},$Round:{$Left:1.3,$Top:2.5}},
+					{$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.2,0.8],$Top:[0.2,0.8]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Round:{$Left:0.8,$Top:2.5}},
+					{$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.1,0.9],$Top:[0.1,0.9]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Round:{$Left:0.8,$Top:2.5}}
+				];
+
+				var jssor_1_options = {
+					$AutoPlay: 1,
+					$SlideshowOptions: {
+						$Class: $JssorSlideshowRunner$,
+						$Transitions: jssor_1_SlideshowTransitions,
+						$TransitionsOrder: 1
+					},
+					$ArrowNavigatorOptions: {
+						$Class: $JssorArrowNavigator$
+					},
+					$BulletNavigatorOptions: {
+						$Class: $JssorBulletNavigator$
+					}
+				};
+
+				var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+				/*#region responsive code begin*/
+
+				var MAX_WIDTH = 980;
+
+				function ScaleSlider() {
+						var containerElement = jssor_1_slider.$Elmt.parentNode;
+						var containerWidth = containerElement.clientWidth;
+
+						if (containerWidth) {
+
+								var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+								jssor_1_slider.$ScaleWidth(expectedWidth);
+						}
+						else {
+								window.setTimeout(ScaleSlider, 30);
+						}
+				}
+
+				ScaleSlider();
+
+				$(window).bind("load", ScaleSlider);
+				$(window).bind("resize", ScaleSlider);
+				$(window).bind("orientationchange", ScaleSlider);
+				/*#endregion responsive code end*/
+		});
+</script>
+<style>
+		/*jssor slider loading skin spin css*/
+		.jssorl-009-spin img {
+				animation-name: jssorl-009-spin;
+				animation-duration: 1.6s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+		}
+
+		@keyframes jssorl-009-spin {
+				from { transform: rotate(0deg); }
+				to { transform: rotate(360deg); }
+		}
+
+		/*jssor slider bullet skin 053 css*/
+		.jssorb053 .i {position:absolute;cursor:pointer;}
+		.jssorb053 .i .b {fill:#fff;fill-opacity:0.5;}
+		.jssorb053 .i:hover .b {fill-opacity:.7;}
+		.jssorb053 .iav .b {fill-opacity: 1;}
+		.jssorb053 .i.idn {opacity:.3;}
+
+		/*jssor slider arrow skin 093 css*/
+		.jssora093 {display:block;position:absolute;cursor:pointer;}
+		.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+		.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+		.jssora093:hover {opacity:.8;}
+		.jssora093.jssora093dn {opacity:.6;}
+		.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+</style>
+<div id="jssor_1" style="position:relative;margin:0 auto;top:10px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+		<!-- Loading Screen -->
+		<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+				<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+		</div>
+		<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+				<div>
+						<img data-u="image" src="images/011.jpg" />
+				</div>
+				<div>
+						<img data-u="image" src="images/012.jpg" />
+				</div>
+				<div>
+						<img data-u="image" src="images/013.jpg" />
+				</div>
+		</div>
+		<!-- Bullet Navigator -->
+		<div data-u="navigator" class="jssorb053" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+				<div data-u="prototype" class="i" style="width:16px;height:16px;">
+						<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+								<path class="b" d="M11400,13800H4600c-1320,0-2400-1080-2400-2400V4600c0-1320,1080-2400,2400-2400h6800 c1320,0,2400,1080,2400,2400v6800C13800,12720,12720,13800,11400,13800z"></path>
+						</svg>
+				</div>
+		</div>
+		<!-- Arrow Navigator -->
+		<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+						<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+						<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+				</svg>
+		</div>
+		<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+				<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+						<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+						<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+				</svg>
+		</div>
+</div>
+<!-- #endregion Jssor Slider End -->
+
+  <footer>
+    <article class="footer_column">
+      <h3>NEUMÁTICOS</h3>
+      <img src="images/pic1.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Exelentes marcas de todo el mundo, contamos con una gran variedad y cantidad para el modelo que estes usando.Revisa nuestro catálogo de neumáticos y encuentra grandes Ofertas.</p>
+		<div class="button2">VER</div>
+    </article>
+    <article class="footer_column">
+      <h3>LLANTAS</h3>
+      <img src="images/pic2.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lucete con los modelos mas llamativos para tu auto. Ofrecemos servicios para mejorar tu vehículo y productos de tuning de la mejor calidad.Contamos con llantas en distintos aros y apernaduras.</p>
+		<div class="button2">VER</div>
+    </article>
+  </footer>
+
+<h1 class="hero_header2"><span class="light">ÚLTIMAS UNIDADES</span></h1>
+	  <div align="center">
+      <a class="example-image-link" href="images/galeria/galeria_1.png" data-lightbox="Galeria" data-title="JUEGO DE AMORTIGUADORES DE GAS RFY">
+	  <img class="example-image" src="images/galeria/thumb_1.jpg" alt="Alola Map" /></a>
+
+      <a class="example-image-link" href="images/galeria/galeria_4.png" data-lightbox="Galeria" data-title="CHAMPIRO-128 185.65.14 86/H GT RADIAL">
+	  <img class="example-image" src="images/galeria/thumb_4.jpg" alt="Slateport Beach"/></a>
+
+	 	 <a class="example-image-link" href="images/galeria/galeria_5.png" data-lightbox="Galeria" data-title="LLANTA 15X6.0 5/114.3 HYUNDAI ELANTRA">
+	  <img class="example-image" src="images/galeria/thumb_5.jpg" alt="Steven's Metagross" /></a>
+
+      <a class="example-image-link" href="images/galeria/galeria_6.png" data-lightbox="Galeria" data-title="LLANTAS ARO 20X9 5X139,7 XD SERIES XD-827">
+	  <img class="example-image" src="images/galeria/thumb_6.jpg" alt="Ultra Megalopolis"/></a>
+
+	  <a class="example-image-link" href="images/galeria/galeria_2.png" data-lightbox="Galeria" data-title="kit distribucion skf bomba agua vw bora 20 8v 2013">
+	  <img class="example-image" src="images/galeria/thumb_2.jpg" alt="Alola Map" /></a>
+
+      <a class="example-image-link" href="images/galeria/galeria_3.png" data-lightbox="Galeria" data-title="Neumatico 245/70R16 ROTALLA RF06">
+	  <img class="example-image" src="images/galeria/thumb_3.jpg" alt="Slateport Beach"/></a>
+    </div>
+
+<!-- INFO Section -->
+  <section class="banner">
+    <h2 class="parallax">ROADXPRESS</h2>
+    <p class="parallax_description">
+¡Tenemos todas las marcas para que encuentres el neumático que buscas!<br>
+Elige la forma de pago que prefieras, con tarjeta de débito o crédito<br>
+y una vez finalizada la compra te contactaremos a la brevedad posible.</p>
+  </section>
+
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">13</h1>
+      <h4>SUCURSALES</h4>
+      <p>A lo largo del pais</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">+15</h1>
+      <h4>MARCAS</h4>
+      <p>Y más por haber...</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">+1000</h1>
+      <h4>PRODUCTOS</h4>
+      <p>Disponibles</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">100</h1>
+      <h4>OFERTAS</h4>
+      <p>¡QUE NO TE PUEDES PERDER!</p>
+    </div>
+  </div>
+
+
+
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header3">OBTÉN LAS ULTIMAS NOTICIAS Y OFERTAS</p>
+    <div class="button">subscribirse</div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2019 - <strong>Este anuncio no es real</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
